@@ -72,7 +72,7 @@ var mapContainer = document.getElementById('kakaomap'), // 지도를 표시할 d
         level: 3 // 지도의 확대 레벨
     };  
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+// var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
     
 // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
 function setMapType(maptype) { 
@@ -100,13 +100,13 @@ function zoomOut() {
 }
 
 // kakao map marker
-var mapContainer = document.getElementById('kakaomap'), // 지도를 표시할 div 
-    mapOption = { 
-        center: new kakao.maps.LatLng(33.44241793094654, 126.57149784381792), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
+// var mapContainer = document.getElementById('kakaomap'), // 지도를 표시할 div 
+//     mapOption = { 
+//         center: new kakao.maps.LatLng(33.44241793094654, 126.57149784381792), // 지도의 중심좌표
+//         level: 3 // 지도의 확대 레벨
+//     };
 
-var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+// var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
 // 마커가 표시될 위치입니다 
 var markerPosition  = new kakao.maps.LatLng(33.44241793094654, 126.57149784381792); 
