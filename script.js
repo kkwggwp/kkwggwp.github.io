@@ -55,16 +55,14 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// 지도 표시를 위한 DOM 레퍼런스와 옵션 정의
-var container = document.getElementById('kakaomap'); // 지도를 담을 영역의 DOM 레퍼런스
-var options = { // 지도를 생성할 때 필요한 기본 옵션
-    center: new kakao.maps.LatLng(33.44241793094654, 126.57149784381792), // 지도의 중심좌표
-    level: 3 // 지도의 레벨(확대, 축소 정도)
-};
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };  
 
-// 지도 생성
-var map = new kakao.maps.Map(container, options); // 지도 생성 및 객체 리턴
-
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    
 // 지도타입 컨트롤의 지도 또는 스카이뷰 버튼을 클릭하면 호출되어 지도타입을 바꾸는 함수입니다
 function setMapType(maptype) { 
     var roadmapControl = document.getElementById('btnRoadmap');
@@ -85,27 +83,10 @@ function zoomIn() {
     map.setLevel(map.getLevel() - 1);
 }
 
-// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 축소하는 함수입니다
+// 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
 function zoomOut() {
     map.setLevel(map.getLevel() + 1);
 }
-
-// 마커가 표시될 위치입니다 
-var markerPosition  = new kakao.maps.LatLng(33.44241793094654, 126.57149784381792); 
-
-// 마커를 생성합니다
-var marker = new kakao.maps.Marker({
-    position: markerPosition
-});
-
-// 마커가 지도 위에 표시되도록 설정합니다
-marker.setMap(map);
-
-// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
-// marker.setMap(null);
-
-
-
 // // kakao map
 
 // var container = document.getElementById('kakaomap'); //지도를 담을 영역의 DOM 레퍼런스
