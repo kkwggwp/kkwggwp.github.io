@@ -19,7 +19,7 @@
 
 ### 2.1 개발 환경
 - Web Framework
-  - Vanilla HTML and CSS JavaScript
+  - Vanilla HTML and CSS, JavaScript
 - IDE
   - VS Code
 - 서비스 배포 환경
