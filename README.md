@@ -65,12 +65,7 @@ gantt
         카카오 맵 추가:2024-08-25, 2d
         모바일 UI 구현:2024-08-26, 3d
        
-```
-gantt
-    title ESTsoft-1st-Project
-    dateFormat YYYY-MM-DD
-    axisFormat  %Y-%m-%d
-    
+```    
 
 ## 5. UI
 
