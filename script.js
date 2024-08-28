@@ -50,7 +50,7 @@ closebtn.addEventListener('click', closemodal);
 
 window.addEventListener('click', (event) => {
   if (event.target === modal) {
-    closeModal();
+    closemodal();
   }
 });
 
