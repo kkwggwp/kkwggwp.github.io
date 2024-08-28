@@ -14,10 +14,15 @@ a {
   text-decoration: none;
 }
 
+.brbr {
+  display: none;
+}
+
 header {
   background-color: #f2e9d8;
   position: fixed;
-  top: 0;  
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 2000;
 }
@@ -31,7 +36,7 @@ header {
 }
 #nav-bar img {  
   width: 130px;
-  height: 40px;  
+  height: 40px;
 }
 nav ul {
   display: flex;  
@@ -318,8 +323,7 @@ hr {
   justify-content: center;
   align-items: center;   
   width: 100%;  
-  margin-top: 5rem;
-  
+  margin-top: 5rem;  
 }
 
 #main-subs-inputbox {
@@ -490,4 +494,190 @@ nav ul img {
   height: 50px;
   margin-top: 38px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) { 
+  #nav-bar  
+  #main-a-container,
+  #main-b-box,
+  #main-gallery-container,
+  hr,
+  #main-map-container,
+  #map_wrap,
+  #main-subs-inputbox,  
+  #footer-container {
+    max-width: 641px;
+    width: 100%;    
+  }
+
+  header {
+    max-width: 768px;
+  }
+
+  .brbr {
+    display: inline;
+  }
+  .brbr2 {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #nav-bar {
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+  }
+
+  #nav-bar img {    
+    height: auto;
+    margin-left: 39px;
+  }
+
+  #main-a-container {    
+    padding-top: 40px;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+    justify-content: center;    
+  }
+  
+  #main-a-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  .main-a-dlbtn {
+    margin: 0 auto;
+    
+  }
+
+  #boxhoduimg {      
+    margin-top: 1rem; 
+    width: 50%; 
+    height: auto;
+  }   
+
+  #main-b-box {
+    flex-direction: column; 
+    align-items: center;
+    gap: 2rem; 
+  }
+
+  #main-b-text {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 16px;
+  }
+
+  #main-b-box img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  #main-gallery-container {    
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  #main-gallery-text {    
+    margin-bottom: 2.5rem;
+    width: 100%;
+  }
+
+  #main-gallery-text1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 40px;
+    color: #D97652;    
+  }
+
+  #main-gallery-text2 {
+    font-size: 1.5rem;
+    line-height: 30px;     
+  }
+  
+  .hodu-container {
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 0;
+    row-gap: 2rem;
+    width: 100%;
+  }
+
+  #main-gallery-text3 {
+    margin-top: 60px;
+  }
+
+  .hodu-container img {
+    width: 100%; 
+    height: auto;
+  }
+
+  #main-map-p2 {
+    font-size: 1.5rem;
+    line-height: 30px;    
+    color: #606367;  
+  }
+
+  #main-subs-inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+    height: auto; 
+    padding: 1rem;
+    overflow: hidden;
+  }
+
+  #main-subs-text {
+    margin-left: 63px;
+    text-align: left;
+  }
+
+  #main-subs-text1 {  
+    font-size: 2.5rem;    
+    line-height: 2.5rem;      
+  }
+  
+  #main-subs-text2 {  
+    font-size: 0.875rem;  
+    line-height: 1.125rem;      
+  }
+
+  .subsinput-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;    
+    margin-left: 63px;
+  }
+
+  .subsinput-container img {
+    width: 20px;
+    height: 20px;
+  }
+
+  input[type="email"] {
+    font-size: .75rem;
+    line-height: 1rem;
+    width: 100%; 
+    padding: 0.5rem; 
+    margin-bottom: 0.5rem; 
+  }
+
+  .subsbtn {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  #bighodu {
+    width: 100%;
+    height: auto; 
+    margin-top: 1rem;
+  }
 }
