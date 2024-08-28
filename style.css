@@ -241,7 +241,9 @@ hr {
 #map_wrap {
   width: 1280px;
   height: 520px;
-  align-items: center;  
+  align-items: center;
+  position:relative;
+  overflow:hidden;
 }
 
 .radius_border {
